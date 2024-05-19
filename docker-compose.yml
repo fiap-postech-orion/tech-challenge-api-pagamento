@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   app:
-    build: .
+    build: tech-challenge-post-tech-pagamento
     ports:
       - "8080:8080"
     environment:
