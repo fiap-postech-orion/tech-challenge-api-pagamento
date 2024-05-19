@@ -1,10 +1,9 @@
 package br.com.postech.software.architecture.techchallenge.pagamento.dto;
 
-import java.math.BigDecimal;
-import java.util.List;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
 
 @NoArgsConstructor
 @Data

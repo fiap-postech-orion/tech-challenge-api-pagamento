@@ -9,18 +9,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class MercadoLivreConnector {
 
-	private static final String MERCADO_PAGO_URI = "https://api.mercadopago.com";
+    private static final String MERCADO_PAGO_URI = "https://api.mercadopago.com";
     private static final String MERCADO_PAGO_PAGAMENTO_URI = "https://api.mercadopago.com/v1/payments/";
 
-	public MercadoPagoQrCodeResponseDTO generateMercadoPagoQrCode(MercadoPagoQrCodeRequestDTO dto) throws Exception {
-		
-		try {
-			//RestTemplate restTemplate = new RestTemplate();
+    public MercadoPagoQrCodeResponseDTO generateMercadoPagoQrCode(MercadoPagoQrCodeRequestDTO dto) throws Exception {
+
+        try {
+            //RestTemplate restTemplate = new RestTemplate();
             //ResponseEntity<MercadoPagoQrCodeResponseDTO> responseEntity = restTemplate.postForEntity(
-			//	    MERCADO_PAGO_URI, dto, MercadoPagoQrCodeResponseDTO.class);
+            //	    MERCADO_PAGO_URI, dto, MercadoPagoQrCodeResponseDTO.class);
             //return responseEntity.getBody();
 
-			return new MercadoPagoQrCodeResponseDTO("staticQrCode");
+            return new MercadoPagoQrCodeResponseDTO("staticQrCode");
         } catch (Exception exception) {
             throw new Exception("Erro ao gerar QR Code: " + exception.getMessage());
         }

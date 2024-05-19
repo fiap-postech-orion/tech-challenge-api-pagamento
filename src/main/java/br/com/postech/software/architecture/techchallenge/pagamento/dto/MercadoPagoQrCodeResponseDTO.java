@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class MercadoPagoQrCodeResponseDTO {
 
-	private String qrCode;
+    private String qrCode;
 
-	public MercadoPagoQrCodeResponseDTO(String qrCode){
-		this.qrCode = qrCode;
-	}
+    public MercadoPagoQrCodeResponseDTO(String qrCode) {
+        this.qrCode = qrCode;
+    }
 }
